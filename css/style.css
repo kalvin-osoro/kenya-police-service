@@ -471,7 +471,10 @@ a:focus {
 }
 
 .contact_form-container {
-  background-image: url(../images/guards.jpg);
+  /* background-image: url(../images/popo.jpeg); */
+  background: #1f233e;
+  background-size:cover ;
+  
 }
 
 .contact_form-container form {
@@ -585,7 +588,7 @@ a:focus {
 /* footer section*/
 
 .footer_section {
-  background-color: #254a93;
+  background-color:  #000202;
   padding: 20px 0;
   font-family: "Roboto", sans-serif;
 }
