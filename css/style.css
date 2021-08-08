@@ -139,6 +139,60 @@ a:focus {
   color: #fff;
 }
 
+.fButtons{
+  text-align: center;
+  margin-top: 200px;
+}
+
+.fbtn{
+  border: 1px solid #1f233e;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+.btnWhite{
+  color: #1f233e; /*words inside*/
+}
+.btnBlue{
+  color: #fff;/*words inside*/
+}
+.btnWhite:hover{
+  color: #fff;/*words inside when hovering*/
+}
+.btnBlue:hover{
+  color: #1f233e;/*words inside when hovering*/
+}
+.fbtn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #f6bb08;/*color of the background*/
+  z-index: -1;
+  transition: 0.5s;
+}
+.btnBlue::before,.btnWhite::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.btnBlue::before{
+  height: 180%;
+}
+.btnWhite:hover::before{
+  height: 180%;
+}
+.btnBlue:hover::before{
+  height: 0%;
+}
+
 /* end slider section */
 
 /* welcome section */
